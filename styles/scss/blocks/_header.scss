@@ -1,0 +1,38 @@
+header{
+    background-image: url(/images/background.jpg);
+    @include background
+}
+
+.header__btn{
+    background-color: transparent;
+    border: none;
+    margin-bottom: 4rem;
+
+}
+
+.btn-previous{
+    transform: scaleX(-1);
+}
+
+.h1-h3{
+    margin-top: 10rem;
+    >h1{
+        font-weight: 700;
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+    >h3{
+        font-weight: 700;
+        font-size: 1.2rem;
+        max-width: 35rem;
+        line-height: 1.8rem;
+        margin-bottom: 4rem;
+    }
+}
+
+.fourth-page h2{
+    margin-top: 6rem;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}

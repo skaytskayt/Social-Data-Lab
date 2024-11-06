@@ -1,0 +1,109 @@
+.second-page{
+    background-image: url(/images/background-second-page.jpg);
+    @include background;
+}
+
+.third-page{
+    background-image: url(/images/background-third-page.jpg);
+    @include background;
+}
+
+.fourth-page{
+    background-image: url(/images/background-fourth-page.jpg);
+    @include background
+}
+
+.team{
+    >h4{
+        font-size: 1rem;
+        color: $grey;
+        margin-bottom: 4rem;
+    }
+    >h2{
+        margin-top: 6rem;
+        font-weight: 700;
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.team__cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img{
+        margin-bottom: 1rem;
+    }
+    &-person{
+        min-width: 15rem;
+        max-width: 15rem;
+        margin-right: 6rem;
+        &-text-1{
+            @include font-title;
+            margin-bottom: 0.5rem;
+        }
+        &-text-2{
+            @include font-pharagraph;
+        }
+    }
+
+}
+
+
+.roadmap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__step-number{
+        width: 3rem;
+        height: 3rem;
+        background-color: $white;
+        color: $black;
+        font-size: 2rem;
+        text-align: center;
+        padding: 0.5rem;
+        margin-top: 11rem;
+        margin-bottom: 1rem;
+    }
+    &__step-text-2--max-width{
+        max-width: 12rem;
+    }
+    &__step{
+        min-width: 15rem;
+        max-width: 15rem;
+        margin-right: 6rem;
+        &-text-1{
+            @include font-title;
+            margin-bottom: 0.5rem;
+        }
+        &-text-2{
+            @include font-pharagraph;
+            font-weight: 600;
+            width: 15rem;
+        }
+    }
+}
+
+.btn-more-info{
+    @include btn-more-info
+}
+
+.rates{
+    display: flex;
+    justify-content: space-between;
+    &__types{
+        display: flex;
+        gap: 5rem;
+    }
+    &__type > p{
+        margin-bottom: 1.5rem;
+        font-size: 0.8rem;
+        color: $grey;
+        &:first-child{
+            color: $white;
+            @include font-title;
+            margin-block: 3rem;
+        }
+    }
+}
+

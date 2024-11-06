@@ -1,0 +1,32 @@
+@mixin min-max($min-width, $max-width){
+    min-width: $min-width;
+    max-width: $max-width;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+@mixin background(){
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+
+@mixin btn-more-info(){
+    border: 3px solid $white;
+    background-color: transparent;
+    color: $white;
+    padding: 0.5rem 1rem;
+}
+
+@mixin font-title(){
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+@mixin font-pharagraph(){
+    font-size: 0.8rem;
+    color: $lightgrey;
+}

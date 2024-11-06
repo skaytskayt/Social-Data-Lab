@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+    background-color: $black;
+    color: $white;
+}
+
+.container{
+    @include min-max(320px, 100%)
+}
+
+.wrapper{
+    @include min-max(320px, 1120px)
+}
+
+a{
+    text-decoration: none;
+    color: $white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 2rem;
+    >p{
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-left: 3rem;
+    }
+    >ul{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 3rem;
+        >li:not(:first-child){
+            margin-left: 5rem;  
+        }
+        li>a{
+            font-size: 1rem;
+            font-weight: 600;
+        }
+    }
+}
+
+.menu-numbers{
+    position: absolute;
+    top: 20rem;
+    left: 0rem;
+}
+
+input:not([type="checkbox"]){
+    border: none;
+    border-bottom: 1px solid $lightgrey;
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    &::placeholder{
+        text-align: start;
+        color: $black;
+        font-weight: 100;
+        font-size: 1rem;
+    }
+    &:focus{
+        outline: none;
+    }
+    &:first-child{
+        margin-top: 0.5rem;
+    }
+}

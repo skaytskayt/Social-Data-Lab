@@ -1,0 +1,8 @@
+@import
+    '_reset',
+    '_fonts',
+    '_mixin',
+    '_variables',
+    '_globals';
+
+@import 'blocks/header', 'blocks/main', 'blocks/footer';
